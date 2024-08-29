@@ -5,11 +5,16 @@
   --base-font-size: 13px;
   --base-line-height: 16px;
 
-  --color1: #ebe0bf;
-  --color2: #b9b098;
-  --color3: #f2ebd5;
-  --color4: #046380;
-  --color5: #002f2f;
+  --color1: #e3e4ff;
+  /* Very light pastel blue */
+  --color2: #b3b9ff;
+  /* Soft, light blue */
+  --color3: #e3e4ff;
+  /* Light blue-purple */
+  --color4: #4f56ff;
+  /* Muted deep blue */
+  --color5: #1a2dff;
+  /* Rich, deeper blue */
 
   --fade: 0.2s;
 
@@ -103,7 +108,7 @@ body {
       border-left: 1px solid var(--color1);
       border-right: 1px solid var(--color1);
       margin-top: -1px;
-      box-shadow: 0 0 10px #b3b4f3;
+      box-shadow: 0 0 10px #ccc;
       overflow: hidden;
       transition:
         height var(--fade),

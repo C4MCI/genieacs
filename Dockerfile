@@ -10,10 +10,11 @@ RUN mkdir -p /var/log/supervisor
 #RUN npm install -g --unsafe-perm genieacs@1.2.11
 WORKDIR /opt
 RUN mkdir genieacs
-COPY . ./genieacs
 WORKDIR /opt/genieacs
+COPY package.json ./
 RUN npm install
 RUN npm i -D tslib
+COPY . .
 RUN npm run build
 
 RUN useradd --system --no-create-home --user-group genieacs

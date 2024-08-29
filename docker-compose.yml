@@ -47,8 +47,8 @@ services:
             - "7557:7557"
             - "7567:7567"
             - "3000:3000"
-        volumes:
-            - opt_volume:/opt
+        # volumes:
+        #     - opt_volume:/opt
         networks:
             - genieacs_network
 
@@ -65,7 +65,7 @@ services:
 volumes:
     data_db:
     data_configdb:
-    opt_volume:
+    # opt_volume:
 
 networks:
     genieacs_network:
