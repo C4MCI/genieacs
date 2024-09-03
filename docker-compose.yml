@@ -4,7 +4,6 @@ services:
 # Dockerfile here: https://github.com/docker-library/mongo/blob/6932ac255d29759af9a74c6931faeb02de0fe53e/4.0/Dockerfile
     mongo:
         image: mongo:7.0
-        restart: always
         container_name: "mongo-genieacs"
         environment:
 #            - MONGO_INITDB_ROOT_USERNAME=userchange
@@ -27,7 +26,6 @@ services:
             context: .
             dockerfile: Dockerfile
         image: vicir/genieacs:1.2.13
-        restart: always
         container_name: "genieacs"
         environment:
             - GENIEACS_UI_JWT_SECRET=changeme

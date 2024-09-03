@@ -92,6 +92,7 @@ body {
   border-bottom: 1px solid var(--color1);
   overflow: visible;
   position: relative;
+  color: #ffffff;
 
   & > .drawer-wrapper {
     position: fixed;
@@ -293,7 +294,7 @@ body {
       right: 10px;
       font-family: monospace;
       font-size: 10px;
-      color: #666;
+      color: #ffffff;
     }
   }
 
